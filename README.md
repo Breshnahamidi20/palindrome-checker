@@ -8,7 +8,7 @@
 
 ## Demo 📸
 [live Demo] (https://elhamy786.github.io/Palindrome_Checker/)
-![Screenshot](./1.png)
+![Screenshot](1.png)
 
 ## Technologies Used 🛠️
 
