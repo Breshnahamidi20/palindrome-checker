@@ -1,4 +1,4 @@
-document.getElementById('check-btn').addEventListener('click', () => {
+document.getElementById('check-btn').addEventListener('click', function () {
   const inputValue = document.getElementById('text-input').value.trim();
 
   if (inputValue === '') {
