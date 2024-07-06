@@ -1,8 +1,8 @@
-document.getElementById('check-btn').addEventListener('click', function () {
+document.getElementById('check-btn').addEventListener('click', function input () {
   const inputValue = document.getElementById('text-input').value.trim();
 
   if (inputValue === '') {
-    no-alert('Please input a value');
+    alert(' Please input a value ');
     return;
   }
 
@@ -18,4 +18,4 @@ document.getElementById('check-btn').addEventListener('click', function () {
   } else {
     document.getElementById('result').textContent = inputValue + ' is not a palindrome';
   }
-  });
+});
