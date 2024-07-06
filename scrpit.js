@@ -1,21 +1,23 @@
-document.getElementById('check-btn').addEventListener('click', function input () {
+document.getElementById('check-btn').addEventListener('click', () => {
   const inputValue = document.getElementById('text-input').value.trim();
-
+  
   if (inputValue === '') {
-    alert(' Please input a value ');
+    alert('Please input a value');
     return;
   }
 
   const normalizedValue = inputValue.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-  function isPalindrome(str) {
+  const isPalindrome = (str) => {
     const reversedStr = str.split('').reverse().join('');
     return str === reversedStr;
-  }
+  };
+
 
   if (isPalindrome(normalizedValue)) {
-    document.getElementById('result').textContent = inputValue + ' is a palindrome';
+    document.getElementById('result').textContent = `${inputValue} is a palindrome`;
   } else {
-    document.getElementById('result').textContent = inputValue + ' is not a palindrome';
+    document.getElementById('result').textContent = `${inputValue} is not a palindrome`;
   }
 });
+
