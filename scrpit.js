@@ -2,7 +2,7 @@ document.getElementById('check-btn').addEventListener('click', () => {
   const inputValue = document.getElementById('text-input').value.trim();
 
   if (inputValue === '') {
-    alter('Please input a value');
+    console.log('Please input a value');
     return;
   }
 
