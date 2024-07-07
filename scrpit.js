@@ -1,21 +1,22 @@
-document.getElementById('check-btn').addEventListener('click', () => {
-  const inputValue = document.getElementById('text-input').value.trim();
+document.getElementById('check-btn').addEventListener('click', function() {
+  var inputValue = document.getElementById('text-input').value.trim();
 
-  if (textInput === '') {
-    alert('Please input a value'); // This line shows the alert
-    return;
-  }
+  if (inputValue === '') {
+      alert('Please input a value');// This line shows the alert
 
-  const normalizedValue = inputValue.toLowerCase().replace(/[^a-z0-9]/g, '');
+      return;
+  }
 
-  const isPalindrome = (str) => {
-    const reversedStr = str.split('').reverse().join('');
-    return str === reversedStr;
-  };
+  var normalizedValue = inputValue.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  function isPalindrome(str) {
+      var reversedStr = str.split('').reverse().join('');
+      return str === reversedStr;
+  }
 
   if (isPalindrome(normalizedValue)) {
-    document.getElementById('result').textContent = `${inputValue} is a palindrome`;
-  } else {
-    document.getElementById('result').textContent = `${inputValue} is not a palindrome`;
-  }
-});
+      document.getElementById('result').textContent = inputValue + ' is a palindrome';
+} else {
+      document.getElementById('result').textContent = inputValue + ' is not a palindrome';
+   }
+        });
