@@ -3,8 +3,8 @@ document.getElementById('check-btn').addEventListener('click', () => {
 
   if (inputValue === '') {
     console.log('Please input a value');
-    return;
-  }
+    return;
+  }
 
   const normalizedValue = inputValue.toLowerCase().replace(/[^a-z0-9]/g, '');
 
