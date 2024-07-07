@@ -33,3 +33,4 @@ document.getElementById('check-btn').addEventListener('click', () => {
     } else {
       document.getElementById('result').textContent = `${inputValue} is not a palindrome`;
     }
+    
