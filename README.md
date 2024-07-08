@@ -20,7 +20,7 @@
 
 ```bash
 1: Clone the Repository:
-git clone https://github.com/elhamy786/Palindrome_Checker.git
+git clone https://github.com/Breshnahamidi20/palindrome-checker.git
 ```
 
 ```bash
